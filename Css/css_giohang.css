@@ -1,0 +1,174 @@
+.carts {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cart {
+    background-color: #ffffff;
+}
+
+.cart img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart>div:first-child {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+.cart table {
+    margin: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.cart table tr,
+td,
+th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.cart input {
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid rgb(233, 224, 224);
+}
+
+.cart tr:not(:last-child) td:nth-child(5) button {
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.cart tr td:last-child {
+    cursor: pointer;
+    color: red;
+}
+
+.cart table th:nth-child(1) {
+    width: 5%;
+}
+
+.cart table th:nth-child(2) {
+    width: 30%;
+}
+
+.cart table th:nth-child(3) {
+    width: 10%;
+}
+
+.cart table th:nth-child(4) {
+    width: 10%;
+}
+
+.cart table th:nth-child(5) {
+    width: 10%;
+}
+
+.cart table th:nth-child(6) {
+    width: 10%;
+}
+
+.cart table th:nth-child(7) {
+    width: 10%;
+}
+
+.cart table th {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #ccc;
+    border: solid 1px #ddd;
+}
+
+.cart_free {
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.cart_free i {
+    font-size: 20px;
+    color: rgb(7, 204, 7);
+    padding-right: 10px;
+}
+
+.cart_dathang {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.cart_dathang button {
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cart_users {
+    margin: 20px 0;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.cart_user {
+    width: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.cart_users>div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart_users div label {
+    width: 120px;
+}
+
+.cart_users div input {
+    flex: 1;
+}
+
+.cart_users>div:first-child {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 1024px) {
+    .cart table th:nth-child(4) {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .table_gh {
+        width: 98%;
+        margin: 0 auto;
+        overflow-y: scroll;
+    }
+    .cart table th:nth-child(4) {
+        width: 100px;
+    }
+    .cart table {
+        width: 800px;
+        margin: 10px 0px;
+    }
+    .cart_user {
+        width: 95%;
+        margin: 0 auto;
+        padding: 11px;
+    }
+    .cart_user div {
+        flex-direction: column !important;
+    }
+}
